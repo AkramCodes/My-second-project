@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #000;
+    color:azure;
+    font-family: sans-serif;
+}
+
+.service{
+    width: 1300px;
+    padding: 100px 60px;
+    margin: auto;
+}
+.service h1{
+font-size: 40px;
+text-align: center;
+font-weight: 600;
+margin-bottom: 15px;
+position: relative;
+}
+
+.service h1::after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background-color:#fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card{
+    background-color: #333;
+    width: calc(26% - 20px);
+    padding: 40px 20px;
+    border-radius: 6px;
+position: relative; 
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.BOX{
+    color: #fff;
+    text-align: left;
+
+}
+.box i{
+        font-size: 40px;
+        padding-left: 10px;
+color: crimson;
+
+}
+
+.box h2{
+    font-size: 20px;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+}
+.card:hover{
+    background-color: transparent;
+}
+.card:hover::before{
+     width: 100%;
+}
